@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "brainimaging-workflow"
+version = "0.1.0"
+description = ""
+authors = ["tianqizhao-louis <louiszhao0517@gmail.com>"]
+readme = "README.md"
+packages = [{include = "brainimaging_workflow"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+numpy = "^1.26.1"
+nd2reader = "^3.3.0"
+tifffile = "^2023.9.26"
+matplotlib = "^3.8.1"
+pyimagej = "^1.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
