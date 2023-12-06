@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  imaging:
+    build:
+      context: .
+      target: production  # Change to 'development' for development build
+    ports:
+      - "8888:8888"  # Map Jupyter Notebook port to host
+    # volumes:
+    #   - .:/app  # Mount the current directory into /app inside the container
+    environment:
+      - JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
+      - MAVEN_HOME=/opt/maven
+      - M2_HOME=/opt/maven
+      - MAVEN_CONFIG=/root/.m2

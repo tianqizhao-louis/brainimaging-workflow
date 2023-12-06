@@ -9,10 +9,11 @@ packages = [{include = "brainimaging_workflow"}]
 [tool.poetry.dependencies]
 python = ">=3.11,<3.13"
 numpy = "^1.26.1"
-nd2reader = "^3.3.0"
 tifffile = "^2023.9.26"
 matplotlib = "^3.8.1"
 pyimagej = "^1.4.1"
+pims = "^0.6.1"
+notebook = "^7.0.6"
 
 
 [build-system]
