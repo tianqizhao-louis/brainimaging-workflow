@@ -131,8 +131,10 @@ ENV PATH="/opt/maven/bin:${PATH}"
 
 ENV MAVEN_CONFIG "/root/.m2"
 
-COPY . /app/
+# Not copy - just mount
+# COPY ../ /app
 WORKDIR /app
+
 # CMD ["gunicorn", "-k", "uvicorn.workers.UvicornWorker", "main:app"]
 
 # Expose port for Jupyter Notebook

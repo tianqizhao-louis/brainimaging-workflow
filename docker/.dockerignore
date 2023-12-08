@@ -47,6 +47,6 @@ coverage.xml
 .hypothesis
 .env
 
-static_volume/
+# static_volume/
 .DS_Store
-src/notebooks/
+# src/notebooks/

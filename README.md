@@ -1,5 +1,16 @@
 # brainimaging-workflow
 
+One-stop shell script:
+
+```
+./build.sh
+```
+
+When container is running:
+```
+docker exec -it imaging-service /bin/bash
+```
+
 ```
 docker system prune && docker build --tag brainimage --file Dockerfile .
 ```
@@ -31,3 +42,8 @@ docker run -v ./src/notebooks:/app/src/notebooks -p 8888:8888 brainimage
 ```
 docker-compose up --build
 ```
+
+```
+docker-compose run imaging
+```
+
